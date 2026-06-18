@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: black;
+  color: white;
+  text-align: center;
+  background: url(https://spacegid.com/wp-content/uploads/2016/03/Zvezdnoe-nebo.jpg);
+}
+
+#game {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  margin: 20px auto;
+  border: 2px solid white;
+  overflow: hidden;
+  background: radial-gradient(circle, #000428, #000);
+}
+
+#player {
+  position: absolute;
+  bottom: 20px;
+  left: 180px;
+  font-size: 40px;
+}
+
+.asteroid {
+  position: absolute;
+  top: -40px;
+  font-size: 30px;
+}
+
+#score {
+  font-size: 20px;
+}

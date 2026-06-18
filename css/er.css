@@ -1,0 +1,69 @@
+.btn{
+    color: white;
+    text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: radial-gradient(circle at bottom, #000010, #000);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  background: url(https://spacegid.com/wp-content/uploads/2016/03/Zvezdnoe-nebo.jpg);
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+#countdown {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #1b2a6b;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #3248a8;
+}
+
+.launch-area {
+  position: relative;
+  height: 500px;
+  margin-top: 40px;
+}
+
+.rocket {
+  font-size: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 4s linear;
+}
+
+.fire {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 40px;
+  background: orange;
+  border-radius: 50%;
+  filter: blur(8px);
+  opacity: 0;
+}

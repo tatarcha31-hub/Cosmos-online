@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: radial-gradient(circle at top, #0b0f2a, #000);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #1b2a6b;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3248a8;
+}
+
+img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+#result {
+  margin-top: 20px;
+}

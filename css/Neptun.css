@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    margin: 0;
+    background: black;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 70px;
+    padding: 0 30px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background-color: black;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    border: none !important;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(57, 57, 57);
+    border: 1px solid black;
+}
+.dropdown.show {
+    display: block;
+}
+.dropdown-container{
+    position: relative;
+    display: inline-block;
+}
+.dropdown a{
+    display: block;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
+.dropdown a:hover{
+    background: #444;
+}
+.show{
+    display: block;
+}
+.btn:hover{
+    color: rgb(199, 72, 199);
+    transform: scale(1.5);
+}
+.logo{
+    padding-left: 40px;
+    color: white;
+}
+
+
+.hero{
+    height: 450px;
+    background-image: url(https://cosmos-online.ru/wp-content/uploads/2018/09/cosmos-online-background-header.jpg);
+}
+.hero-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    font-size: 40px;
+    color: white;
+    padding-top: 50px;
+}
+
+
+.header-number2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(60, 60, 60);
+    padding: 0 396px;
+    height: 80px;
+}
+.list2{
+    display: flex;
+    gap: 60px;
+}
+.a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    align-items: center;
+    display: flex;
+    gap: 6px;
+}
+.a:hover{
+    color: rgb(199, 72, 199);
+}
+.planet-table{
+    width: 700px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.planet-table caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.planet-table th,
+.planet-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+
+.planet-table th {
+    background-color: plum;
+    width: 40%;
+}
+
+.planet-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.first h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0;
+}
+.first h1:hover{
+    color: rgb(151, 102, 197);
+}
+.first img{
+    padding-left: 250px;
+}
+.first p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding: 50px 50px;
+}
+.first{
+    background: url(https://spacegid.com/wp-content/uploads/2016/03/Zvezdnoe-nebo.jpg);
+}
