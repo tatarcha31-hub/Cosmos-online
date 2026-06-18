@@ -143,7 +143,8 @@ body{
 
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
+    padding-top: 400px;
 }
 
 .infa{
@@ -208,4 +209,59 @@ html, body {
   height: auto;
   min-height: 100%;
   overflow-y: auto;
+}
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #0b0f1a;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 20px #4fc3f7;
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+.close {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 6px 12px;
+  background: #e53935;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.side-btn {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1e88e5;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #1e88e5;
 }
