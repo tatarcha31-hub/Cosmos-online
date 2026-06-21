@@ -1,16 +1,83 @@
+.header{
+  width: 100%;
+  height: 80px;
+  background: url(https://spacegid.com/wp-content/uploads/2016/03/Zvezdnoe-nebo.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.nav{
+  display: flex;
+  gap: 60px;
+  padding-right: 70px;
+}
+.nav a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav a:hover{
+  color: rgb(127, 127, 208);
+}
+.div{
+  padding-right: 400px;
+}
+.div a{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border: 2px solid purple;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+.div a:hover{
+  color: rgb(127, 127, 208);
+}
+
 .btn{
     color: white;
     text-align: center;
 }
 
 body {
-  margin: 0;
-  font-family: Arial;
-  background: radial-gradient(circle at bottom, #000010, #000);
-  color: white;
-  text-align: center;
-  overflow: hidden;
-  background: url(https://spacegid.com/wp-content/uploads/2016/03/Zvezdnoe-nebo.jpg);
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(120, 0, 255, 0.20), transparent 45%),
+        radial-gradient(circle at 80% 30%, rgba(0, 80, 255, 0.15), transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(255, 0, 180, 0.10), transparent 55%),
+        linear-gradient(180deg, #02020a, #000000);
+
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image:
+        radial-gradient(1px 1px at 10% 20%, white, transparent),
+        radial-gradient(1px 1px at 30% 70%, white, transparent),
+        radial-gradient(1px 1px at 60% 40%, white, transparent),
+        radial-gradient(1px 1px at 80% 10%, white, transparent),
+        radial-gradient(1px 1px at 90% 80%, white, transparent);
+
+    background-size: 600px 400px;
+    opacity: 0.35;
+
+    animation: starsMove 120s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes starsMove {
+    from { transform: translateY(0); }
+    to { transform: translateY(-200px); }
 }
 
 h1 {

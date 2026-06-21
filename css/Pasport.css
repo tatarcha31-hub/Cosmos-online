@@ -1,0 +1,158 @@
+.header{
+  width: 100%;
+  height: 80px;
+  background: url(https://spacegid.com/wp-content/uploads/2016/03/Zvezdnoe-nebo.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.nav{
+  display: flex;
+  gap: 60px;
+  padding-right: 70px;
+}
+.nav a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav a:hover{
+  color: rgb(127, 127, 208);
+}
+.div{
+  padding-right: 400px;
+}
+.div a{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border: 2px solid purple;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+.div a:hover{
+  color: rgb(127, 127, 208);
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(120, 0, 255, 0.25), transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(0, 80, 255, 0.18), transparent 45%),
+        radial-gradient(circle at 50% 80%, rgba(255, 0, 180, 0.12), transparent 50%),
+        linear-gradient(180deg, #04040f, #000000);
+
+    overflow-x: hidden;
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    background-image:
+        radial-gradient(1px 1px at 20px 30px, white, transparent),
+        radial-gradient(1px 1px at 100px 80px, white, transparent),
+        radial-gradient(1px 1px at 200px 150px, white, transparent),
+        radial-gradient(1px 1px at 300px 200px, white, transparent),
+        radial-gradient(1px 1px at 400px 50px, white, transparent);
+
+    background-repeat: repeat;
+    background-size: 500px 300px;
+
+    opacity: 0.4;
+    animation: starsMove 120s linear infinite;
+}
+
+@keyframes starsMove{
+    from { transform: translateY(0px); }
+    to { transform: translateY(-200px); }
+}
+
+
+.passport {
+    width: 450px;
+    margin: 80px auto;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+        0 0 20px rgba(138, 43, 226, 0.4),
+        0 0 50px rgba(65, 105, 225, 0.3);
+}
+
+
+.passport h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.passport input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+}
+
+.passport button {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(90deg, #8a2be2, #4169e1);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.passport button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px #8a2be2, 0 0 30px #4169e1;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+}
+
+#result div {
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#result p {
+    margin: 8px 0;
+}

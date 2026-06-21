@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/Object.css">
+    <link rel="stylesheet" href="/css/Pasport.css">
 </head>
 <body>
-
-    <header class="header">
+        <header class="header">
 
         <div class="div"><a href="/index.html">Главная</a></div>
         <nav class="nav">
@@ -19,21 +18,17 @@
             <a href="/html/Pasport.html">Космический паспорт</a>
         </nav>
     </header>
+    <div class="passport">
+    <h2>🌌 Космический паспорт</h2>
 
-<h1>🌌 NASA Космос</h1>
+    <input type="date" id="birthDate">
 
-<div class="container">
+    <button class="btn" id="createPassport">
+        Получить паспорт
+    </button>
 
-  <button onclick="loadNASA()">Загрузить фото дня NASA</button>
-
-  <div id="result"></div>
-
+    <div id="result"></div>
 </div>
-
-<script src="app.js"></script>
-</body>
-</html>
-
-    <script src="/js/Object.js"></script>
+    <script src="/js/Pasport.js"></script>
 </body>
 </html>
